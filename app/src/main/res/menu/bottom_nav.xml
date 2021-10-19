@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/vender"
+        android:title="@string/vendor"
+        android:icon="@drawable/ic_twotone_storefront_24"/>
+    <item
+        android:id="@+id/plan"
+        android:title="@string/plan"
+        android:icon="@drawable/ic_round_menu_book_24"/>
+    <item
+        android:id="@+id/dress_plan"
+        android:title="@string/dress_idea"
+        android:icon="@drawable/ic_round_checkroom_24"/>
+
+    <item
+        android:id="@+id/dress_song"
+        android:title="@string/song"
+        android:icon="@drawable/ic_round_audiotrack_24"/>
+
+    <item
+        android:id="@+id/dress_blog"
+        android:title="@string/blog"
+        android:icon="@drawable/ic_round_receipt_long_24"/>
+
+</menu>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.WeddingPlaning">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="6"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delhi NCR"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/catamaran_semibold"
+                    android:textColor="@android:color/holo_red_light"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_round_keyboard_arrow_down_24"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="35dp"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#E0E0E0"
+                    android:layout_height="35dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/service_provider"
+                        />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="35dp"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#E0E0E0"
+                    android:layout_height="35dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/free_list_business"
+                        />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="35dp"
+                    app:cardCornerRadius="25dp"
+                    app:cardBackgroundColor="#E0E0E0"
+                    app:cardElevation="0dp"
+                    android:layout_height="35dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/ic_round_person_24"
+                        />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="15dp"
+        android:layout_height="wrap_content">
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:orientation="vertical"
+      android:layout_margin="10dp"
+      android:layout_height="wrap_content">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Wedding Planning"
+          android:fontFamily="@font/catamaran_semibold"
+          android:textColor="@android:color/holo_red_light"
+          android:textSize="21dp"
+
+          />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="A wedding may be a fun and joyful occasion, and also the designing method is stuffed with excitement and anticipation. With it slow, patience, and a touch flexibility, you'll produce a stunning and unforgettable day for you and your future spouse! designing a marriage is difficult, therefore you’ll have to do some in-depth analysis as you go. within the in the meantime, there are some basic steps you'll want start. begin by setting a firm budget, then work together with your partner to line a date and place along your guest list. Once that’s done, you'll begin pound out the various very little (and not-so-little) details that get into creating a marriage."
+          android:fontFamily="@font/catamaran_semibold"
+          android:textColor="@color/light_black"
+          android:textSize="12sp"
+          android:layout_marginTop="5dp"
+          />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Developing a Budget and Setting a Date"
+          android:fontFamily="@font/catamaran_semibold"
+          android:textColor="@color/light_black"
+          android:textSize="21dp"
+          android:layout_marginTop="10dp"
+
+          />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Avoid guest list bloat."
+          android:fontFamily="@font/catamaran_semibold"
+          android:textColor="@color/light_black"
+          android:textSize="16dp"
+          android:layout_marginTop="5dp"
+
+          />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Although you would possibly be tempted to throw everybody you recognize on your guest list, that isn’t forever a good plan. With every addition you create, you’re adding further prices whereas additionally creating your wedding less intimate.
+
+To a degree, this was a entice we tend to fell into with our own wedding – our guest list grew and grew to the purpose wherever we invited people who we didn’t recognize well just because we felt supposed.
+
+To save the maximum amount as you'll be able to, strive invitatory fewer individuals and creating the event a lot of intimate. begin by whittling your list down by twentieth, then another twentieth. Then see if you’re proud of it.
+
+Evoke wedding facilitate rather than wedding gifts.
+We were lucky that many of our friends and family had musical talent, in order that they were able to offer backup for our ceremony. we tend to even have an in depth friend who’s a particularly arch amateur artist, and he was willing to photograph our ceremony as our present. Then, when the ceremony, he provided high-quality digital pictures of everything.
+
+Asking family and friends to supply facilitate or services that align with their abilities in part of a present could be a good way to stay your wedding on a budget."
+          android:fontFamily="@font/catamaran_semibold"
+          android:textColor="@color/light_black"
+          android:textSize="12sp"
+          android:layout_marginTop="10dp"
+
+          />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Don’t stress."
+          android:fontFamily="@font/catamaran_semibold"
+          android:textColor="@color/light_black"
+          android:textSize="16dp"
+          android:layout_marginTop="5dp"
+
+          />
+
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:fontFamily="@font/catamaran_semibold"
+          android:text="Although you would possibly be tempted to throw everybody you recognize on your guest list, that isn’t forever a good plan. With every addition you create, you’re adding further prices whereas additionally creating your wedding less intimate.
+
+To a degree, this was a entice we tend to fell into with our own wedding – our guest list grew and grew to the purpose wherever we invited people who we didn’t recognize well just because we felt supposed.
+
+To save the maximum amount as you'll be able to, strive invitatory fewer individuals and creating the event a lot of intimate. begin by whittling your list down by twentieth, then another twentieth. Then see if you’re proud of it.
+
+Evoke wedding facilitate rather than wedding gifts.
+We were lucky that many of our friends and family had musical talent, in order that they were able to offer backup for our ceremony. we tend to even have an in depth friend who’s a particularly arch amateur artist, and he was willing to photograph our ceremony as our present. Then, when the ceremony, he provided high-quality digital pictures of everything.
+
+Asking family and friends to supply facilitate or services that align with their abilities in part of a present could be a good way to stay your wedding on a budget."
+          android:textColor="@color/light_black"
+          android:textSize="12sp"
+
+          />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Good luck (and congratulations)!"
+          android:fontFamily="@font/catamaran_semibold"
+          android:textColor="@color/light_black"
+          android:textSize="16dp"
+          android:layout_marginBottom="15dp"
+          android:layout_marginTop="5dp"
+
+          />
+
+  </LinearLayout>
+
+</ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

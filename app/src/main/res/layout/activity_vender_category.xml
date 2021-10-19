@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Vender_Category">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:onClick="finish"
+                android:id="@+id/cardView_back"
+                android:layout_width="30dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="0dp"
+                android:layout_centerVertical="true"
+                app:cardBackgroundColor="#E0E0E0"
+                android:layout_height="30dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_round_keyboard_arrow_left_24"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/catamaran_semibold"
+                android:text="Vendors Categories"
+                android:textColor="#212121"
+                android:textSize="16dp" />
+
+
+            <LinearLayout
+                android:layout_below="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_weight="3"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delhi NCR"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/catamaran_semibold"
+                    android:textColor="@android:color/holo_red_light"
+                    />
+
+                <ImageView
+                    android:layout_width="12sp"
+                    android:layout_height="12sp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_round_keyboard_arrow_down_24"
+                    />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:id="@+id/recycleView_vender"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>
