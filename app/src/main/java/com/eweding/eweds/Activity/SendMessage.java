@@ -2,6 +2,7 @@ package com.eweding.eweds.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -17,5 +18,9 @@ public class SendMessage extends AppCompatActivity {
 
     public void finish(View view) {
         finish();
+    }
+
+    public void send_mesage(View view) {
+        startActivity(new Intent(this,LoginActivity.class));
     }
 }

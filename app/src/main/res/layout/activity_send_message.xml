@@ -231,6 +231,7 @@
             android:background="@color/very_light_grey"
             />
         <LinearLayout
+            android:onClick="send_mesage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="10dp"

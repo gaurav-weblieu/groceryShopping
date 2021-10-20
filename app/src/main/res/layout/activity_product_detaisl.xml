@@ -350,6 +350,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1">
                 <androidx.cardview.widget.CardView
+                    android:onClick="call"
                     android:layout_width="40dp"
                     android:layout_marginEnd="10dp"
                     android:layout_centerVertical="true"

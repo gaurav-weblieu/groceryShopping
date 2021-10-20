@@ -83,13 +83,7 @@ public class HomeFragment extends Fragment {
         recycleView_our_tips.setAdapter(ourTipsAdapter);
 
 
-        line_van.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getActivity(), Vender_Category.class));
-
-            }
-        });
+        line_van.setOnClickListener(v -> startActivity(new Intent(getActivity(), Vender_Category.class)));
 
         line_city.setOnClickListener(new View.OnClickListener() {
             @Override

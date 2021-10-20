@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
@@ -71,5 +72,10 @@ public class ProductDetaislActivity extends AppCompatActivity {
 
     public void finish(View view) {
         finish();
+    }
+
+    public void call(View view) {
+        Intent intentDial = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "123456789"));
+        startActivity(intentDial);
     }
 }
