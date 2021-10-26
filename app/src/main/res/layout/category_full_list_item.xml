@@ -46,9 +46,11 @@
                         app:cardBackgroundColor="@color/white"
                         android:layout_height="30dp">
                         <ImageView
+                            android:id="@+id/ivProfile"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="5dp"
+                            android:transitionName="imageMain"
                             android:src="@drawable/ic_round_bookmarks_24"
                             />
                     </androidx.cardview.widget.CardView>
@@ -72,8 +74,10 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/textView_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:transitionName="textVew_name"
                 android:textColor="@color/light_black"
                 android:text="Anubhut Trousseau Package"
                 />

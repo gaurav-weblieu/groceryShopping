@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.eweding.eweds.Activity.BlogDetails;
 import com.eweding.eweds.Activity.CatergoryFullListActivity;
 import com.eweding.eweds.R;
 
@@ -44,6 +45,12 @@ public class BlogAdapter extends RecyclerView.Adapter<BlogAdapter.ViewHolder>{
 
         holder.imageView_ani.startAnimation(anim);*/
 
+        holder.imageView_ani.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                context.startActivity(new Intent(context, BlogDetails.class));
+            }
+        });
 
         Animation animation1 =
                 AnimationUtils.loadAnimation(context, R.anim.blink);

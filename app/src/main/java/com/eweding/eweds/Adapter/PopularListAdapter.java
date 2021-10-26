@@ -22,7 +22,7 @@ public class PopularListAdapter extends RecyclerView.Adapter<PopularListAdapter.
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View listItem= layoutInflater.inflate(R.layout.popular_list_item, parent, false);
+        View listItem= layoutInflater.inflate(R.layout.planing_list_item, parent, false);
         ViewHolder viewHolder = new ViewHolder(listItem);
         return viewHolder;
     }

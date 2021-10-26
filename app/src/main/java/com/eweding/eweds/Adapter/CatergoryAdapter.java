@@ -11,14 +11,17 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.eweding.eweds.Activity.CatergoryFullListActivity;
+import com.eweding.eweds.Fragment.HomeFragment;
 import com.eweding.eweds.R;
 
 public class CatergoryAdapter extends RecyclerView.Adapter<CatergoryAdapter.ViewHolder>{
 
     private final Context context;
+    private final HomeFragment homeFragment;
 
-    public CatergoryAdapter(Context context) {
+    public CatergoryAdapter(Context context, HomeFragment homeFragment) {
         this.context = context;
+        this.homeFragment = homeFragment;
     }
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -36,6 +39,12 @@ public class CatergoryAdapter extends RecyclerView.Adapter<CatergoryAdapter.View
                 context.startActivity(new Intent(context, CatergoryFullListActivity.class));
             }
         });
+
+        if (position==11){
+            homeFragment.lastCat();
+        }else {
+            homeFragment.notLastCat();
+        }
     }
 
 

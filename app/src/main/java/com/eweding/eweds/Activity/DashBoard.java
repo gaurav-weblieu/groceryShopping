@@ -1,8 +1,11 @@
 package com.eweding.eweds.Activity;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -26,10 +29,14 @@ import com.eweding.eweds.R;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
+import com.google.android.material.navigation.NavigationView;
 
 public class DashBoard extends AppCompatActivity {
 
     BottomNavigationView bottomNavigation;
+    CardView cardView_profile,cardView_service,cardView_business_list;
+
+    public DrawerLayout drawerLayout;
 
 
     @Override
@@ -38,6 +45,24 @@ public class DashBoard extends AppCompatActivity {
         setContentView(R.layout.activity_dash_board);
 
          bottomNavigation=findViewById(R.id.bottomNavigation);
+        cardView_profile=findViewById(R.id.cardView_profile);
+        cardView_service=findViewById(R.id.cardView_service);
+        cardView_business_list=findViewById(R.id.cardView_business_list);
+
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+       setSupportActionBar(toolbar);
+
+        drawerLayout =findViewById(R.id.my_drawer_layout);
+        NavigationView navigationView = findViewById(R.id.navigation_main);
+        // navigationView.setNavigationItemSelectedListener(this);
+
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar,
+                R.string.nav_open, R.string.nav_close);
+
+        drawerLayout.addDrawerListener(toggle);
+
+        toggle.syncState();
 
         bottomNavigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
@@ -66,8 +91,53 @@ public class DashBoard extends AppCompatActivity {
 
         });
 
+        cardView_profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DashBoard.this, LoginActivity.class));
+
+            }
+        });
+
+        cardView_service.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DashBoard.this, ServiceProvider.class));
+
+            }
+        });
+
+        cardView_business_list.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DashBoard.this, FreeListBusiness.class));
+
+            }
+        });
+
         openFragment(new HomeFragment());
 
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.vendor_login:
+                        startActivity(new Intent(DashBoard.this, ServiceProvider.class));
+                        break;
+
+                    case R.id.free_business:
+                        startActivity(new Intent(DashBoard.this, FreeListBusiness.class));
+
+                        break;
+
+                    case R.id.user_login:
+                        startActivity(new Intent(DashBoard.this, LoginActivity.class));
+
+                        break;
+                }
+                return true;
+            }
+        });
 
     }
 
@@ -80,5 +150,7 @@ public class DashBoard extends AppCompatActivity {
     }
 
 
-
+    public void city(View view) {
+        startActivity(new Intent(DashBoard.this,City_Select.class));
+    }
 }

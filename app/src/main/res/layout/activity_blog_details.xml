@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.BlogDetails">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:onClick="finish"
+                android:id="@+id/cardView_back"
+                android:layout_width="30dp"
+                app:cardCornerRadius="15dp"
+                android:layout_centerVertical="true"
+                app:cardBackgroundColor="#E0E0E0"
+                app:cardElevation="0dp"
+                android:layout_height="30dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_round_keyboard_arrow_left_24"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/catamaran_semibold"
+                android:text="Blog"
+                android:textColor="#212121"
+                android:textSize="16dp" />
+
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/very_light_grey"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="21dp"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="bold"
+            android:fontFamily="@font/catamaran_semibold"
+            android:text="Brides who Nailed the Smokey Eyes Makeup Look"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+            android:layout_height="180dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/imageone"
+                android:scaleType="centerCrop"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/catamaran_semibold"
+            android:layout_marginTop="10dp"
+            android:text="Your eyes are an impression of your soul and with regards to your wedding eye-cosmetics, there is surely nothing that can outperform the appeal of a glitzy smokey eye. \n \n
+Smokey eye cosmetics has been a prevailing fashion for a serious in length time, however ladies just appear to go crazier about it. Inferable from how overpoweringly striking and exquisite they make one look, smokey eyes have turned into a go-to choice for a great deal of ladies. Be it mehndi, mixed drink, sangeet or wedding, we have seen ladies vouching for seething smokey eyes in dark, gold, matte and sparkle for practically the entirety of their wedding parties. What's more, why not! It is one lit cosmetics pattern that goes well with pretty much every sort of clothing. Truth be told, when went with crimson lips or cutesy pink nudes, the uber-chic smokey eye cosmetics improves your wedding magnificence by multifold, making you a definitive star of the night. It is, subsequently, significant for you to give all the consideration to this furious cosmetics style and join it in any event one of your glitz wedding cosmetics looks. \n\n
+Also, thus, to give all of you sorts of motivation, we curated this blog and set down sparkling looks of our preferred genuine ladies who shook the exemplary smokey eye cosmetics and impressed us! Look at their looks and take a few signals. After you're finished gazing at these marvels, we have recorded a well ordered instructional exercise and the items you have to do great smokey eye cosmetics all alone!"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/catamaran_semibold"
+            android:layout_marginTop="10dp"
+            android:text="Glam Smokey Eye Makeup"
+          />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/catamaran_semibold"
+            android:layout_marginTop="10dp"
+            android:text="Shimmery pink smokey eye cosmetics cooperated with a thick stroke of eyeliner and ruddy lips
+"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+
+            android:layout_height="180dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/imageone"
+                android:scaleType="centerCrop"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/catamaran_semibold"
+            android:layout_marginTop="10dp"
+            android:text="Matte smokey eye cosmetics with flawlessly outlined brows, naked lips, and clean face is ideal for multi day wedding
+
+"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+
+            android:layout_height="180dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/imageone"
+                android:scaleType="centerCrop"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/catamaran_semibold"
+            android:layout_marginTop="10dp"
+            android:text="Shining gold black smokey eye makeup is way too glam!
+"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+
+            android:layout_height="180dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/imageone"
+                android:scaleType="centerCrop"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/catamaran_semibold"
+            android:layout_marginTop="10dp"
+            android:text="Shining gold black smokey eye makeup is way too glam!
+"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+            android:layout_height="180dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/imageone"
+                android:scaleType="centerCrop"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/catamaran_semibold"
+            android:layout_marginTop="10dp"
+            android:text="Shining gold black smokey eye makeup is way too glam!
+"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+
+            android:layout_height="180dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/imageone"
+                android:scaleType="centerCrop"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/catamaran_semibold"
+            android:layout_marginTop="10dp"
+            android:text="Shining gold black smokey eye makeup is way too glam!
+"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+
+            android:layout_height="180dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/imageone"
+                android:scaleType="centerCrop"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/catamaran_semibold"
+            android:layout_marginTop="10dp"
+            android:text="Shining gold black smokey eye makeup is way too glam!
+"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+
+            android:layout_height="180dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/imageone"
+                android:scaleType="centerCrop"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/catamaran_semibold"
+            android:layout_marginTop="10dp"
+            android:text="Shining gold black smokey eye makeup is way too glam!
+"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+
+            android:layout_marginBottom="15dp"
+            android:layout_height="180dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/imageone"
+                android:scaleType="centerCrop"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

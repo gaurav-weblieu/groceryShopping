@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Eweds">
         <activity
+            android:name=".Activity.BlogDetails"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.UserSignUp"
+            android:exported="true" />
+        <activity
             android:name=".Activity.VideoActivity"
             android:exported="true" />
         <activity

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <item
+        android:id="@+id/vendor_login"
+        android:title="Vandor Login"
+        android:icon="@drawable/service_provider"
+        />
+
+    <item
+        android:id="@+id/free_business"
+        android:title="Free Business List"
+        android:icon="@drawable/free_list_business"
+        />
+
+    <item
+        android:id="@+id/user_login"
+        android:title="User Login"
+        android:icon="@drawable/ic_round_person_24"
+        />
+
+</menu>

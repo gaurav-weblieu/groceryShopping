@@ -34,7 +34,6 @@ public class Albmus_Activity extends AppCompatActivity {
         recycleView_video.setAdapter(videoAdapter);
 
 
-
     }
 
     public void finish(View view) {

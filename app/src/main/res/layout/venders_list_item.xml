@@ -10,8 +10,6 @@
         app:cardCornerRadius="0dp"
         android:layout_height="120dp">
 
-
-
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -25,25 +23,23 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="#99000000"
-            android:orientation="vertical"
-            android:layout_height="match_parent">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Wedding Venue"
-                android:textStyle="bold"
-                android:layout_gravity="center"
-                android:gravity="center"
                 android:layout_centerInParent="true"
+                android:layout_gravity="center"
                 android:fontFamily="@font/catamaran_semibold"
-                android:textSize="21dp"
+                android:gravity="center"
+                android:text="Wedding Venue"
                 android:textColor="@color/white"
-                />
+                android:textSize="21dp"
+                android:textStyle="bold" />
 
         </RelativeLayout>
-
 
 
     </FrameLayout>

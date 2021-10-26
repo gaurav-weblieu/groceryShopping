@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.view.View;
 
-import com.eweding.eweds.Adapter.CatergoryAllListAdapter;
 import com.eweding.eweds.Adapter.VenderCatAdapter;
 import com.eweding.eweds.R;
 
@@ -27,9 +26,6 @@ public class Vender_Category extends AppCompatActivity {
         recycleView_vender.setHasFixedSize(true);
         recycleView_vender.setLayoutManager(new LinearLayoutManager(this));
         recycleView_vender.setAdapter(adapter);
-
-
-
 
     }
 

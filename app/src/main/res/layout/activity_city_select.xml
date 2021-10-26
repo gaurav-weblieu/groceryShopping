@@ -26,6 +26,8 @@
                 android:layout_centerVertical="true"
                 app:cardBackgroundColor="#E0E0E0"
                 android:layout_height="30dp">
+
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

@@ -3,7 +3,11 @@ package com.eweding.eweds.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -23,16 +27,21 @@ import com.eweding.eweds.Adapter.CatergoryAdapter;
 import com.eweding.eweds.Adapter.OurTipsAdapter;
 import com.eweding.eweds.Adapter.PopularListAdapter;
 import com.eweding.eweds.Adapter.WeddingPlanAdapter;
+import com.eweding.eweds.Interface.Last_cate_Interface;
 import com.eweding.eweds.R;
+import com.google.android.material.navigation.NavigationView;
 
 
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment implements Last_cate_Interface {
 
     RecyclerView recycleView_category,recycleView_pre_wedding,recycleView_vender_bride,recycleView_vender_groom,
             recycleView_popular_features,recycleView_our_tips;
 
     LinearLayout line_van,line_city;
-    CardView cardView_profile,cardView_service,cardView_business_list;
+
+    public DrawerLayout drawerLayout;
+    public ActionBarDrawerToggle actionBarDrawerToggle;
+    CardView cardView_main_cat;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -40,6 +49,20 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_home, container, false);
 
+
+        Toolbar toolbar = view.findViewById(R.id.toolbar);
+        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
+
+        drawerLayout = view.findViewById(R.id.my_drawer_layout);
+        NavigationView navigationView = view.findViewById(R.id.navigation_main);
+       // navigationView.setNavigationItemSelectedListener(this);
+
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(getActivity(), drawerLayout, toolbar,
+                R.string.nav_open, R.string.nav_close);
+
+        drawerLayout.addDrawerListener(toggle);
+
+        toggle.syncState();
 
         recycleView_category=view.findViewById(R.id.recycleView_category);
         recycleView_pre_wedding=view.findViewById(R.id.recycleView_pre_wedding);
@@ -49,11 +72,12 @@ public class HomeFragment extends Fragment {
         recycleView_our_tips=view.findViewById(R.id.recycleView_our_tips);
         line_van=view.findViewById(R.id.line_van);
         line_city=view.findViewById(R.id.line_city);
-        cardView_profile=view.findViewById(R.id.cardView_profile);
-        cardView_service=view.findViewById(R.id.cardView_service);
-        cardView_business_list=view.findViewById(R.id.cardView_business_list);
+        cardView_main_cat=view.findViewById(R.id.cardView_main_cat);
 
-        CatergoryAdapter adapter = new CatergoryAdapter(getActivity());
+
+
+
+        CatergoryAdapter adapter = new CatergoryAdapter(getActivity(),HomeFragment.this);
         recycleView_category.setHasFixedSize(true);
         recycleView_category.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false));
         recycleView_category.setAdapter(adapter);
@@ -85,38 +109,6 @@ public class HomeFragment extends Fragment {
 
         line_van.setOnClickListener(v -> startActivity(new Intent(getActivity(), Vender_Category.class)));
 
-        line_city.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getActivity(), City_Select.class));
-
-            }
-        });
-
-        cardView_profile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getActivity(), LoginActivity.class));
-
-            }
-        });
-
-        cardView_service.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getActivity(), ServiceProvider.class));
-
-            }
-        });
-
-        cardView_business_list.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getActivity(), FreeListBusiness.class));
-
-            }
-        });
-
 
         return view;
     }
@@ -131,4 +123,14 @@ public class HomeFragment extends Fragment {
 
     }
 
+    @Override
+    public void lastCat() {
+        cardView_main_cat.setCardElevation(0);
+    }
+
+    @Override
+    public void notLastCat() {
+        cardView_main_cat.setCardElevation(12);
+
+    }
 }

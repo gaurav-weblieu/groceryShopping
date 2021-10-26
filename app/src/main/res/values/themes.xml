@@ -15,6 +15,11 @@
         <item name="bottomSheetDialogTheme">@style/CustomBottomSheetDialog</item>
 
         <!-- Customize your theme here. -->
+
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowContentTransitions">true</item>
+
+
     </style>
 
 
@@ -38,5 +43,12 @@
     <style name="Theme.Eweds.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Eweds.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/holo_red_light</item>
+    </style>
 
 </resources>

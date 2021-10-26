@@ -1,13 +1,17 @@
 package com.eweding.eweds.Adapter;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.core.app.ActivityOptionsCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.eweding.eweds.Activity.ProductDetaislActivity;
@@ -34,7 +38,21 @@ public class CatergoryAllListAdapter extends RecyclerView.Adapter<CatergoryAllLi
         holder.lineraLayout_det.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                context.startActivity(new Intent(context, ProductDetaislActivity.class));
+
+                ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation((Activity) context,holder.ivProfile,"imageMain");
+                // activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation((Activity) context,holder.textView,"textVew_name");
+                Intent in = new Intent(context,ProductDetaislActivity.class);
+               context. startActivity(in,activityOptionsCompat.toBundle());
+
+
+               /* Intent intent = new Intent(context, ProductDetaislActivity.class);
+                //intent.putExtra(ObjectDetailActivity.EXTRA_OBJECT, object);
+                Pair<View, String> p1 = Pair.create(holder.ivProfile,"imageMain");
+                Pair<View, String> p2 = Pair.create(holder.textView,"textVew_name");
+                ActivityOptionsCompat options = ActivityOptionsCompat.
+                        makeSceneTransitionAnimation(this, p1, p2);
+                context.startActivity(intent, options.toBundle());*/
+
             }
         });
 
@@ -50,11 +68,13 @@ public class CatergoryAllListAdapter extends RecyclerView.Adapter<CatergoryAllLi
 
         public TextView textView;
         LinearLayout lineraLayout_det;
+        ImageView ivProfile;
 
         public ViewHolder(View itemView) {
             super(itemView);
             this.textView = (TextView) itemView.findViewById(R.id.textView_name);
             this.lineraLayout_det =  itemView.findViewById(R.id.lineraLayout_det);
+            this.ivProfile =  itemView.findViewById(R.id.ivProfile);
         }
     }
 }

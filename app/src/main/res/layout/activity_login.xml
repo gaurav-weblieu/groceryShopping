@@ -21,7 +21,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView_back"
                 android:layout_width="30dp"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:layout_centerVertical="true"
                 android:onClick="back"
                 app:cardBackgroundColor="#E0E0E0"
@@ -79,7 +79,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Phone Number"
+            android:hint="Email"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginTop="15dp"
@@ -88,19 +88,50 @@
             app:boxCornerRadiusTopEnd="15dp"
             app:boxCornerRadiusTopStart="15dp"
             android:layout_marginBottom="5dp"
-            app:prefixText="(+91)"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"
+                android:inputType="textEmailAddress"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            android:layout_marginBottom="5dp"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
 
 
-        <LinearLayout
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_registration"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:onClick="reg"
+            android:layout_margin="10dp"
+            />
+
+       <!-- <LinearLayout
             android:layout_width="match_parent"
             android:layout_marginTop="10dp"
             android:layout_height="wrap_content">
@@ -132,13 +163,13 @@
                 android:background="@color/light_black"
                 />
 
-        </LinearLayout>
+        </LinearLayout>-->
 
         <androidx.cardview.widget.CardView
             android:layout_width="180dp"
             app:cardBackgroundColor="@android:color/holo_red_light"
             app:cardCornerRadius="5dp"
-            android:layout_marginTop="15dp"
+            android:layout_margin="15dp"
             android:layout_gravity="center"
             android:layout_height="40dp">
             <LinearLayout
@@ -147,7 +178,7 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:text="Continue with Email"
+                    android:text="Submit"
                     android:textColor="@color/white"
                     android:layout_gravity="center"
                     android:gravity="center"
@@ -157,7 +188,7 @@
         </androidx.cardview.widget.CardView>
 
 
-        <RelativeLayout
+       <!-- <RelativeLayout
             android:layout_gravity="center"
             android:layout_width="180dp"
             android:layout_marginTop="10dp"
@@ -214,7 +245,7 @@
 
             </LinearLayout>
 
-        </RelativeLayout>
+        </RelativeLayout>-->
 
     </LinearLayout>
 
