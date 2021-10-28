@@ -12,14 +12,11 @@
         android:id="@+id/my_drawer_layout"
         android:layout_height="match_parent">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-
         >
-
 
               <!--  <androidx.appcompat.widget.Toolbar
                     android:id="@+id/toolbar"
@@ -221,16 +218,39 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_margin="10dp"
-                    app:cardCornerRadius="8dp"
-                    android:layout_height="140dp">
-                    <ImageView
+                    app:cardCornerRadius="10dp"
+                    android:layout_margin="5dp"
+                    app:cardElevation="3dp"
+                    android:layout_height="150dp">
+
+
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/bannertwo"
-                        android:scaleType="centerCrop"
-                        />
+                        android:layout_height="match_parent">
+
+                        <com.smarteist.autoimageslider.SliderView
+                            android:id="@+id/imageSlider"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:sliderAnimationDuration="1200"
+                            app:sliderAutoCycleDirection="back_and_forth"
+                            app:sliderAutoCycleEnabled="true"
+                            app:sliderIndicatorAnimationDuration="1200"
+                            app:sliderIndicatorGravity="center_horizontal|bottom"
+                            app:sliderIndicatorMargin="15dp"
+                            app:sliderIndicatorOrientation="horizontal"
+                            app:sliderIndicatorPadding="3dp"
+                            app:sliderIndicatorRadius="2dp"
+                            app:sliderIndicatorSelectedColor="#5A5A5A"
+                            app:sliderIndicatorUnselectedColor="#FFF"
+                            app:sliderScrollTimeInSec="3"
+                            app:sliderStartAutoCycle="true"
+                            />
+
+                    </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <TextView
                     android:layout_width="match_parent"
@@ -362,7 +382,6 @@
 
 
     </LinearLayout>
-
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_main"

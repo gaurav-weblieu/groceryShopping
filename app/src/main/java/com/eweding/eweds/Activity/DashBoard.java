@@ -35,9 +35,7 @@ public class DashBoard extends AppCompatActivity {
 
     BottomNavigationView bottomNavigation;
     CardView cardView_profile,cardView_service,cardView_business_list;
-
     public DrawerLayout drawerLayout;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +53,6 @@ public class DashBoard extends AppCompatActivity {
 
         drawerLayout =findViewById(R.id.my_drawer_layout);
         NavigationView navigationView = findViewById(R.id.navigation_main);
-        // navigationView.setNavigationItemSelectedListener(this);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar,
                 R.string.nav_open, R.string.nav_close);
