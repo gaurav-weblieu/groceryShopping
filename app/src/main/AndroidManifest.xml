@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.eweding.eweds">
+    package="com.grocery.Shopping">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,6 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Eweds">
+        <activity
+            android:name=".Activity.Checkout"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Cart"
+            android:exported="true" />
         <activity
             android:name=".Activity.BlogDetails"
             android:exported="true" />

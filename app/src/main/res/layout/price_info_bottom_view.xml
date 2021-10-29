@@ -39,7 +39,7 @@
             android:fontFamily="@font/catamaran_semibold"
             android:text="30,0000-2,50,000"
             android:textStyle="bold"
-            android:textColor="@android:color/holo_red_light"
+            android:textColor="@color/green_color"
             android:textSize="16dp" />
 
         <View
@@ -89,7 +89,7 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:textStyle="bold"
-                    android:textColor="@android:color/holo_red_light"
+                    android:textColor="@color/green_color"
                     />
             </LinearLayout>
             <RelativeLayout

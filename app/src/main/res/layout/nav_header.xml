@@ -2,18 +2,18 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="100dp"
-    android:background="#E0E0E0"
+    android:background="@color/green_color"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView_profile"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        app:cardElevation="0dp"
-        android:layout_marginStart="10dp"
         android:layout_centerVertical="true"
-        app:cardBackgroundColor="@color/black"
-        app:cardCornerRadius="35dp">
+        android:layout_marginStart="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="0dp">
 
     </androidx.cardview.widget.CardView>
 
@@ -31,14 +31,14 @@
             android:text="User Name"
             android:textSize="16dp"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="xyz@gmail.com"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="12sp" />
 
     </LinearLayout>

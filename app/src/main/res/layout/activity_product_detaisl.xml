@@ -25,9 +25,8 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="260dp"
-            android:scaleType="centerCrop"
             android:transitionName="imageMain"
-            android:src="@drawable/makeup_image"
+            android:src="@drawable/imageone"
             />
 
         <ImageView
@@ -69,14 +68,7 @@
                     android:textSize="12dp" />
 
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="On Request"
-                    android:textColor="@android:color/holo_red_light"
-                    android:textSize="16dp"
-                    android:textStyle="bold" />
+
 
                 <TextView
                     android:layout_width="match_parent"
@@ -85,55 +77,54 @@
                     android:text="@string/pricing_info"
                     android:textSize="12dp" />
 
-                <LinearLayout
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_gravity="bottom"
-                    android:background="@color/white"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="@color/green_color"
                     >
+
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_margin="8dp"
-                        android:background="@drawable/bg_border_curved"
-                        android:onClick="send"
-                        android:layout_weight="4">
-                        <TextView
-                            android:layout_width="match_parent"
+                        android:weightSum="5"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:text="Send Message"
-                            android:layout_gravity="center"
-                            android:gravity="center"
-                            android:textStyle="bold"
-                            android:textColor="@android:color/holo_red_light"
-                            />
-                    </LinearLayout>
-                    <RelativeLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-                        <androidx.cardview.widget.CardView
-                            android:onClick="call"
-                            android:layout_width="40dp"
-                            android:layout_marginEnd="10dp"
-                            android:layout_centerVertical="true"
-                            app:cardCornerRadius="25dp"
-                            android:layout_marginStart="10dp"
-                            app:cardBackgroundColor="@android:color/holo_green_dark"
-                            android:layout_height="40dp">
-                            <LinearLayout
+                            android:layout_weight="4">
+
+                            <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_margin="5dp"
-                                    android:src="@drawable/ic_round_call_24"
-                                    />
-                            </LinearLayout>
-                        </androidx.cardview.widget.CardView>
-                    </RelativeLayout>
-                </LinearLayout>
+                                android:layout_height="match_parent"
+                                android:text="ADD"
+                                android:textColor="@color/white"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#CDDC39"
+                            >
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="2dp"
+                                android:src="@drawable/ic_baseline_add_24"
+                                />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -275,7 +266,7 @@
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:textStyle="bold"
-                        android:textColor="@android:color/holo_red_light"
+                        android:textColor="@color/green_color"
                         />
                 </LinearLayout>
 

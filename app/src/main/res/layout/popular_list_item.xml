@@ -6,6 +6,7 @@
     android:layout_margin="10dp"
     app:cardCornerRadius="8dp"
     app:cardElevation="6dp"
+    app:cardBackgroundColor="@color/green_color"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
@@ -26,7 +27,6 @@
             <ImageView
                 android:id="@+id/image_icon"
                 android:src="@drawable/imageone"
-                android:scaleType="centerCrop"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 />
@@ -38,11 +38,11 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:textColor="@color/light_black"
+        android:textColor="@color/white"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/catamaran_semibold"
         android:textSize="12dp"
-        android:text="Wedding Form"
+        android:text="Fresh Fruit"
 
         />
 

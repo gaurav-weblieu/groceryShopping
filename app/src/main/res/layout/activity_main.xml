@@ -4,37 +4,39 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_gravity="center"
-    android:gravity="center"
     android:orientation="vertical"
+    android:background="@color/green_color"
     android:layout_height="match_parent"
     tools:context=".Activity.MainActivity">
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/animationView"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_margin="10dp"
-        app:lottie_rawRes="@raw/wedding"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"/>
+        android:layout_height="match_parent">
 
-    <!--<TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="India's most loving Wedding Planner!"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textStyle="italic|bold"
-        android:textColor="@android:color/black"
-        android:textSize="21dp"
-        />-->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_rawRes="@raw/shop_icon_two"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
 
-   <!-- <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:src="@drawable/app_logo"
-        android:layout_gravity="center"
-        />-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="India's Best Shopping App !"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="150dp"
+            android:textColor="@color/white"
+            android:textSize="21dp"
+            />
+
+    </FrameLayout>
+
+
+
+
 
 </LinearLayout>

@@ -10,6 +10,7 @@
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
+        android:background="@color/green_color"
         android:layout_height="wrap_content">
 
         <RelativeLayout
@@ -23,7 +24,7 @@
                 app:cardCornerRadius="15dp"
                 app:cardElevation="0dp"
                 android:layout_centerVertical="true"
-                app:cardBackgroundColor="#E0E0E0"
+                app:cardBackgroundColor="@color/white"
                 android:layout_height="30dp">
             <ImageView
                 android:layout_width="match_parent"
@@ -40,8 +41,8 @@
                 android:layout_marginStart="10dp"
                 android:layout_toEndOf="@+id/cardView_back"
                 android:fontFamily="@font/catamaran_semibold"
-                android:text="Delhi NCR. Trousseau Packers"
-                android:textColor="#212121" />
+                android:text="Fruit and Veg"
+                android:textColor="@color/white" />
 
             <androidx.cardview.widget.CardView
                 android:onClick="short_list"
@@ -51,7 +52,7 @@
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
                 android:layout_marginEnd="10dp"
-                app:cardBackgroundColor="#E0E0E0"
+                app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="25dp">
 
                 <ImageView
@@ -64,12 +65,12 @@
         </RelativeLayout>
 
     </androidx.appcompat.widget.Toolbar>
-
+<!--
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/very_light_grey"
-        />
+        />-->
 
     <LinearLayout
         android:layout_width="match_parent"
