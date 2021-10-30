@@ -231,11 +231,11 @@
 
 
     <RelativeLayout
-        android:onClick="check_out"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/green_color">
+        android:background="@color/green_color"
+        android:onClick="check_out">
 
         <TextView
             android:layout_width="wrap_content"

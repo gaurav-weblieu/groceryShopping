@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.grocery.Shopping">
+    package="com.grocery.shopping">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,55 +12,58 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Eweds">
         <activity
-            android:name=".Activity.Checkout"
+            android:name="com.grocery.shopping.Activity.Checkout"
             android:exported="true" />
         <activity
-            android:name=".Activity.Cart"
+            android:name="com.grocery.shopping.Activity.PaymentSelect"
             android:exported="true" />
         <activity
-            android:name=".Activity.BlogDetails"
+            android:name="com.grocery.shopping.Activity.Cart"
             android:exported="true" />
         <activity
-            android:name=".Activity.UserSignUp"
+            android:name="com.grocery.shopping.Activity.BlogDetails"
             android:exported="true" />
         <activity
-            android:name=".Activity.VideoActivity"
+            android:name="com.grocery.shopping.Activity.UserSignUp"
             android:exported="true" />
         <activity
-            android:name=".Activity.ShortList"
+            android:name="com.grocery.shopping.Activity.VideoActivity"
             android:exported="true" />
         <activity
-            android:name=".Activity.FreeListBusiness"
+            android:name="com.grocery.shopping.Activity.ShortList"
             android:exported="true" />
         <activity
-            android:name=".Activity.ServiceProvider"
+            android:name="com.grocery.shopping.Activity.FreeListBusiness"
             android:exported="true" />
         <activity
-            android:name=".Activity.City_Select"
+            android:name="com.grocery.shopping.Activity.ServiceProvider"
             android:exported="true" />
         <activity
-            android:name=".Activity.Vender_Category"
+            android:name="com.grocery.shopping.Activity.City_Select"
             android:exported="true" />
         <activity
-            android:name=".Activity.Albmus_Activity"
+            android:name="com.grocery.shopping.Activity.Vender_Category"
             android:exported="true" />
         <activity
-            android:name=".Activity.SendMessage"
+            android:name="com.grocery.shopping.Activity.Albmus_Activity"
             android:exported="true" />
         <activity
-            android:name=".Activity.ProductDetaislActivity"
+            android:name="com.grocery.shopping.Activity.SendMessage"
             android:exported="true" />
         <activity
-            android:name=".Activity.LoginActivity"
+            android:name="com.grocery.shopping.Activity.ProductDetaislActivity"
             android:exported="true" />
         <activity
-            android:name=".Activity.CatergoryFullListActivity"
+            android:name="com.grocery.shopping.Activity.LoginActivity"
             android:exported="true" />
         <activity
-            android:name=".Activity.DashBoard"
+            android:name="com.grocery.shopping.Activity.CatergoryFullListActivity"
             android:exported="true" />
         <activity
-            android:name=".Activity.MainActivity"
+            android:name="com.grocery.shopping.Activity.DashBoard"
+            android:exported="true" />
+        <activity
+            android:name="com.grocery.shopping.Activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

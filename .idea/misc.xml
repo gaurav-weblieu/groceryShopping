@@ -56,15 +56,18 @@
         <entry key="..\:/Project gourav/Shopping App/app/src/main/res/layout/activity_blog_details.xml" value="0.278125" />
         <entry key="..\:/Project gourav/Shopping App/app/src/main/res/layout/activity_cart.xml" value="0.2" />
         <entry key="..\:/Project gourav/Shopping App/app/src/main/res/layout/activity_catergory_full_list.xml" value="0.16" />
-        <entry key="..\:/Project gourav/Shopping App/app/src/main/res/layout/activity_checkout.xml" value="0.2" />
+        <entry key="..\:/Project gourav/Shopping App/app/src/main/res/layout/activity_checkout.xml" value="0.16" />
         <entry key="..\:/Project gourav/Shopping App/app/src/main/res/layout/activity_city_select.xml" value="0.17592592592592593" />
         <entry key="..\:/Project gourav/Shopping App/app/src/main/res/layout/activity_dash_board.xml" value="0.17592592592592593" />
         <entry key="..\:/Project gourav/Shopping App/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Project gourav/Shopping App/app/src/main/res/layout/activity_payment_select.xml" value="0.18" />
         <entry key="..\:/Project gourav/Shopping App/app/src/main/res/layout/activity_product_detaisl.xml" value="0.17592592592592593" />
         <entry key="..\:/Project gourav/Shopping App/app/src/main/res/layout/cart_list_item.xml" value="0.17592592592592593" />
         <entry key="..\:/Project gourav/Shopping App/app/src/main/res/layout/category_full_list_item.xml" value="0.18" />
         <entry key="..\:/Project gourav/Shopping App/app/src/main/res/layout/category_list_item.xml" value="0.278125" />
+        <entry key="..\:/Project gourav/Shopping App/app/src/main/res/layout/fragment_first.xml" value="0.278125" />
         <entry key="..\:/Project gourav/Shopping App/app/src/main/res/layout/fragment_home.xml" value="0.17592592592592593" />
+        <entry key="..\:/Project gourav/Shopping App/app/src/main/res/layout/fragment_payment_details.xml" value="0.22" />
         <entry key="..\:/Project gourav/Shopping App/app/src/main/res/layout/fresh_list_item.xml" value="0.278125" />
         <entry key="..\:/Project gourav/Shopping App/app/src/main/res/layout/nav_header.xml" value="0.278125" />
         <entry key="..\:/Project gourav/Shopping App/app/src/main/res/layout/planing_list_item.xml" value="0.278125" />
