@@ -10,7 +10,8 @@
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
-        android:background="@color/green_color"
+        android:background="@color/white"
+        android:elevation="3dp"
         android:layout_height="wrap_content">
 
         <RelativeLayout
@@ -42,7 +43,7 @@
                 android:layout_toEndOf="@+id/cardView_back"
                 android:fontFamily="@font/catamaran_semibold"
                 android:text="Fruit and Veg"
-                android:textColor="@color/white" />
+                android:textColor="@color/green_color" />
 
             <androidx.cardview.widget.CardView
                 android:onClick="short_list"
@@ -56,8 +57,8 @@
                 app:cardCornerRadius="25dp">
 
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
                     android:layout_margin="8dp"
                     android:src="@drawable/ic_round_bookmarks_24" />
             </androidx.cardview.widget.CardView>
@@ -65,8 +66,8 @@
         </RelativeLayout>
 
     </androidx.appcompat.widget.Toolbar>
-<!--
-    <View
+
+    <!--<View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/very_light_grey"

@@ -34,10 +34,12 @@ public class ProductDetaislActivity extends AppCompatActivity {
 
     RecyclerView recycleView_our_tips,recycleView_review,recycleView_similar_vender;
     private LinearLayout linear_layout;
-
     private SliderView sliderView;
+
     private SliderAdapterExample sliderAdapter;
     private ArrayList<Integer> arrayList_banner= new ArrayList<Integer>();
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

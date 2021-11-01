@@ -21,10 +21,11 @@
             android:orientation="vertical">
 
             <androidx.appcompat.widget.Toolbar
+                android:elevation="3dp"
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="@color/green_color">
+                android:background="@color/white">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -46,7 +47,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/catamaran_semibold"
                             android:text="Delivery Location"
-                            android:textColor="@color/white"
+                            android:textColor="@color/green_color"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -61,7 +62,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/catamaran_semibold"
                                 android:text="Unnamed Road, Sec-86, Noida"
-                                android:textColor="@color/white"
+                                android:textColor="@color/green_color"
                                 android:textSize="12sp"
                                 android:textStyle="bold" />
 
@@ -87,7 +88,7 @@
                             android:layout_width="35dp"
                             android:layout_height="35dp"
                             android:onClick="cart"
-                            app:cardBackgroundColor="@color/green_color"
+                            app:cardBackgroundColor="@color/white"
                             app:cardCornerRadius="25dp"
                             app:cardElevation="0dp">
 
